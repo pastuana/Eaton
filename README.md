@@ -20,3 +20,4 @@ To run a Makefile, follow these steps:
    ```
    make clean
    ```
+The project is on master branch
