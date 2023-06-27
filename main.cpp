@@ -8,7 +8,7 @@ int main() {
     Device dev1;
     Device dev2;
 
-    // Declaration through stack
+    
     Observer * observer = new Observer();
 
     dev1.AttachToObserver(observer);
