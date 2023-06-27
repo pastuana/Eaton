@@ -7,7 +7,6 @@ Device::Device()
 {
     m_deviceName = generateUniqueName("Device");
     m_isActive = false;
-    m_isAttached = false;
 }
 
 Device::~Device()
