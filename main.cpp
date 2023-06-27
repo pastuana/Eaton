@@ -7,7 +7,6 @@ int main() {
 
     Device dev1;
     Device dev2;
-
     
     Observer * observer = new Observer();
 

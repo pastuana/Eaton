@@ -12,10 +12,6 @@ Device::Device()
 
 Device::~Device()
 {
-    if (m_isAttached)
-    {
-        DetachFromObserver();
-    }
     delete m_observer;
 }
 
@@ -24,7 +20,6 @@ void Device::AttachToObserver( Observer * observer)
     if (observer)
     {
         m_observer = observer;
-        m_isAttached = true;
         std::cout << m_deviceName << " is attached to observer" << std::endl;
     }
 }
@@ -35,7 +30,6 @@ void Device::DetachFromObserver( )
     {
         m_isActive = false;
     }
-    m_isAttached = false;
     m_observer = nullptr;
     std::cout << m_deviceName << " is detached from observer" << std::endl;
 }

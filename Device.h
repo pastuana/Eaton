@@ -29,7 +29,6 @@ public:
 private:
     std::string m_deviceName;
     bool m_isActive;
-    bool m_isAttached;
     Observer* m_observer;
 
     void Notify () const;
